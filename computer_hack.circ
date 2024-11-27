@@ -308,7 +308,8 @@
       <a name="addrWidth" val="16"/>
       <a name="appearance" val="classic"/>
       <a name="contents">addr/data: 16 16
-0 2 ec10 3 e090 0 e308
+0 fc10 1 f4d0 a e301 1 fc10
+c e387 0 fc10 2 e308 e e387
 </a>
       <a name="dataWidth" val="16"/>
     </comp>
@@ -1991,8 +1992,9 @@
       <a name="inputs" val="4"/>
       <a name="label" val="jle"/>
     </comp>
-    <comp lib="1" loc="(4370,1140)" name="Controlled Buffer">
+    <comp lib="1" loc="(4370,1190)" name="AND Gate">
       <a name="facing" val="south"/>
+      <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(4370,2750)" name="AND Gate">
       <a name="inputs" val="3"/>
@@ -2011,8 +2013,9 @@
     </comp>
     <comp lib="1" loc="(4840,2410)" name="AND Gate"/>
     <comp lib="1" loc="(4920,1070)" name="NOT Gate"/>
-    <comp lib="1" loc="(4990,1140)" name="Controlled Buffer">
+    <comp lib="1" loc="(4990,1160)" name="AND Gate">
       <a name="facing" val="south"/>
+      <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(5150,160)" name="OR Gate">
       <a name="facing" val="west"/>
@@ -2025,8 +2028,9 @@
       <a name="facing" val="west"/>
     </comp>
     <comp lib="1" loc="(5540,1060)" name="NOT Gate"/>
-    <comp lib="1" loc="(5610,1130)" name="Controlled Buffer">
+    <comp lib="1" loc="(5610,1190)" name="AND Gate">
       <a name="facing" val="south"/>
+      <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(5710,660)" name="AND Gate">
       <a name="facing" val="west"/>
@@ -2481,11 +2485,14 @@
     <wire from="(4310,2170)" to="(4600,2170)"/>
     <wire from="(4330,1070)" to="(4330,1130)"/>
     <wire from="(4330,1130)" to="(4360,1130)"/>
+    <wire from="(4360,1130)" to="(4360,1160)"/>
     <wire from="(4360,2450)" to="(4500,2450)"/>
     <wire from="(4370,1070)" to="(4370,1120)"/>
-    <wire from="(4370,1140)" to="(4370,1280)"/>
+    <wire from="(4370,1120)" to="(4380,1120)"/>
+    <wire from="(4370,1190)" to="(4370,1280)"/>
     <wire from="(4370,1280)" to="(4530,1280)"/>
     <wire from="(4370,2750)" to="(4560,2750)"/>
+    <wire from="(4380,1120)" to="(4380,1160)"/>
     <wire from="(4430,2470)" to="(4430,2620)"/>
     <wire from="(4430,2470)" to="(4550,2470)"/>
     <wire from="(4500,1130)" to="(4500,1240)"/>
@@ -2523,13 +2530,16 @@
     <wire from="(4890,1280)" to="(4990,1280)"/>
     <wire from="(4910,1130)" to="(4910,1240)"/>
     <wire from="(4920,1070)" to="(4950,1070)"/>
-    <wire from="(4950,1070)" to="(4950,1130)"/>
-    <wire from="(4950,1130)" to="(4980,1130)"/>
-    <wire from="(4990,1070)" to="(4990,1120)"/>
-    <wire from="(4990,1140)" to="(4990,1190)"/>
+    <wire from="(4950,1070)" to="(4950,1120)"/>
+    <wire from="(4950,1120)" to="(4980,1120)"/>
+    <wire from="(4980,1120)" to="(4980,1130)"/>
+    <wire from="(4990,1070)" to="(4990,1100)"/>
+    <wire from="(4990,1100)" to="(5000,1100)"/>
+    <wire from="(4990,1160)" to="(4990,1190)"/>
     <wire from="(4990,1190)" to="(4990,1280)"/>
     <wire from="(4990,1190)" to="(5030,1190)"/>
     <wire from="(4990,1280)" to="(5120,1280)"/>
+    <wire from="(5000,1100)" to="(5000,1130)"/>
     <wire from="(5090,1130)" to="(5090,1240)"/>
     <wire from="(5090,1130)" to="(5210,1130)"/>
     <wire from="(5090,1240)" to="(5120,1240)"/>
@@ -2555,9 +2565,12 @@
     <wire from="(5540,1060)" to="(5570,1060)"/>
     <wire from="(5570,1060)" to="(5570,1120)"/>
     <wire from="(5570,1120)" to="(5600,1120)"/>
+    <wire from="(5600,1120)" to="(5600,1160)"/>
     <wire from="(5610,1060)" to="(5610,1110)"/>
-    <wire from="(5610,1130)" to="(5610,1270)"/>
+    <wire from="(5610,1110)" to="(5620,1110)"/>
+    <wire from="(5610,1190)" to="(5610,1270)"/>
     <wire from="(5610,1270)" to="(5740,1270)"/>
+    <wire from="(5620,1110)" to="(5620,1160)"/>
     <wire from="(5680,660)" to="(5710,660)"/>
     <wire from="(5700,580)" to="(5720,580)"/>
     <wire from="(5710,1120)" to="(5710,1230)"/>
